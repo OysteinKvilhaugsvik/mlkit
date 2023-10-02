@@ -47,9 +47,9 @@ public final class ChooserActivity extends AppCompatActivity
           }
           : new Class<?>[] {
             LivePreviewActivity.class,
-            StillImageActivity.class,
-            CameraXLivePreviewActivity.class,
-            CameraXSourceDemoActivity.class,
+            //StillImageActivity.class,
+            //CameraXLivePreviewActivity.class,
+            //CameraXSourceDemoActivity.class,
           };
 
   private static final int[] DESCRIPTION_IDS =
