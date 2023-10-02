@@ -44,7 +44,6 @@ import com.google.mlkit.vision.demo.BitmapUtils;
 import com.google.mlkit.vision.demo.GraphicOverlay;
 import com.google.mlkit.vision.demo.R;
 import com.google.mlkit.vision.demo.VisionImageProcessor;
-import com.google.mlkit.vision.demo.java.barcodescanner.BarcodeScannerProcessor;
 import com.google.mlkit.vision.demo.java.facedetector.FaceDetectorProcessor;
 import com.google.mlkit.vision.demo.java.facemeshdetector.FaceMeshDetectorProcessor;
 import com.google.mlkit.vision.demo.java.labeldetector.LabelDetectorProcessor;
@@ -434,9 +433,6 @@ public final class StillImageActivity extends AppCompatActivity {
         case FACE_DETECTION:
           Log.i(TAG, "Using Face Detector Processor");
           imageProcessor = new FaceDetectorProcessor(this);
-          break;
-        case BARCODE_SCANNING:
-          imageProcessor = new BarcodeScannerProcessor(this, /* zoomCallback= */ null);
           break;
         case TEXT_RECOGNITION_LATIN:
           if (imageProcessor != null) {
