@@ -38,7 +38,7 @@
             android:value="barcode,face,ocr,ocr_chinese,ocr_devanagari,ocr_japanese,ocr_korean,ica,custom_ica"/>
 
         <activity
-            android:name=".java.ChooserActivity"
+            android:name=".java.MainActivity"
             android:exported="true"
             android:theme="@style/AppTheme">
             <intent-filter>
