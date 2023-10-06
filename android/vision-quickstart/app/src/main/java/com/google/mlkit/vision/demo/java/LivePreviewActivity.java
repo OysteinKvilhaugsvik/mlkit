@@ -88,14 +88,18 @@ public final class LivePreviewActivity extends AppCompatActivity
     }
 
     try {
-      PoseDetectorOptionsBase poseDetectorOptions =
-              PreferenceUtils.getPoseDetectorOptionsForLivePreview(this);
+      PoseDetectorOptionsBase poseDetectorOptions = PreferenceUtils.getPoseDetectorOptionsForLivePreview();
       Log.i(TAG, "Using Pose Detector with options " + poseDetectorOptions);
-      boolean shouldShowInFrameLikelihood =
-              PreferenceUtils.shouldShowPoseDetectionInFrameLikelihoodLivePreview(this);
-      boolean visualizeZ = PreferenceUtils.shouldPoseDetectionVisualizeZ(this);
-      boolean rescaleZ = PreferenceUtils.shouldPoseDetectionRescaleZForVisualization(this);
-      boolean runClassification = PreferenceUtils.shouldPoseDetectionRunClassification(this);
+
+      // Settings
+      boolean shouldShowInFrameLikelihood = false;
+      boolean visualizeZ = false;
+      boolean rescaleZ = false;
+      boolean runClassification = true;
+
+      // Set the front-facing camera as the default camera source
+      cameraSource.setFacing(CameraSource.CAMERA_FACING_FRONT);
+
       cameraSource.setMachineLearningFrameProcessor(
               new PoseDetectorProcessor(
                       this,
