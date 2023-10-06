@@ -29,13 +29,13 @@
       android:textColor="@color/white"
       android:textSize="18sp"/>
 
-  <Button
+  <!--<Button
       android:id="@+id/button"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:onClick="btnLoadUnity"
       android:text="Play"
-      android:layout_marginTop="12dp"/>
+      android:layout_marginTop="12dp"/>-->
 
   <Button
       android:id="@+id/activity_track"
@@ -44,11 +44,11 @@
       android:text="@string/track_activities"
       android:layout_marginTop="12dp"/>
 
-  <Button
+  <!--<Button
       android:id="@+id/button2"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:onClick="btnUnloadUnity"
       android:text="Finish"
-      android:layout_marginTop="12dp"/>
+      android:layout_marginTop="12dp"/>-->
 </LinearLayout>

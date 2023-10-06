@@ -1,4 +1,4 @@
-package com.unity.mynativeapp;
+/*package com.unity.mynativeapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -107,4 +107,4 @@ public class MainUnityActivity extends OverrideUnityActivity {
     }
 
 
-}
+}*/

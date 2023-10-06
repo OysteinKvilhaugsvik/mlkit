@@ -1,4 +1,4 @@
-package com.unity.mynativeapp;
+/*package com.unity.mynativeapp;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -82,4 +82,4 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         finishAffinity();
     }
-}
+}*/
